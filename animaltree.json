@@ -1,0 +1,33 @@
+{
+    "question": "Does it have feathers?",
+    "yes": {
+        "question": "Does it fly?",
+        "yes": "eagle",
+        "no": {
+            "question": "Is is a domestic animal?",
+            "yes": "penguin",
+            "no": "chicken"
+        }
+    },
+    "no": {
+        "question": "Is it a mammal?",
+        "yes": {
+            "question": "Is it small?",
+            "yes": {
+                "question": "Is it a loyal animal?",
+                "yes": "dog",
+                "no": {
+                    "question": "Does it have hairless tail?",
+                    "yes": "mouse",
+                    "no": "cat"
+                }
+            },
+            "no": {
+                "question": "Does it eat meat?",
+                "yes": "lion",
+                "no": "horse"
+            }
+        },
+        "no": "snake"
+    }
+}
