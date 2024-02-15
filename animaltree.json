@@ -2,11 +2,15 @@
     "question": "Does it have feathers?",
     "yes": {
         "question": "Does it fly?",
-        "yes": "eagle",
+        "yes": {
+            "question": "Can it mimic human speech?",
+            "yes": "parrot",
+            "no": "eagle"
+        },
         "no": {
             "question": "Is is a domestic animal?",
-            "yes": "penguin",
-            "no": "chicken"
+            "yes": "chicken",
+            "no": "penguin"
         }
     },
     "no": {
@@ -24,10 +28,18 @@
             },
             "no": {
                 "question": "Does it eat meat?",
-                "yes": "lion",
+                "yes": {
+                    "question": "Does it live in water?",
+                    "yes": "dolphin",
+                    "no": "lion"
+                },
                 "no": "horse"
             }
         },
-        "no": "snake"
+        "no": {
+            "question": "Can it jump?",
+            "yes": "frog",
+            "no": "snake"
+        }
     }
 }
