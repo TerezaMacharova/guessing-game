@@ -22,7 +22,11 @@
                 "yes": "dog",
                 "no": {
                     "question": "Does it have hairless tail?",
-                    "yes": "mouse",
+                    "yes": {
+                        "question": "Is it social animal?",
+                        "yes": "rat",
+                        "no": "mouse"
+                    },
                     "no": "cat"
                 }
             },
@@ -31,15 +35,35 @@
                 "yes": {
                     "question": "Does it live in water?",
                     "yes": "dolphin",
-                    "no": "lion"
+                    "no": {
+                        "question": "Can it climb tree?",
+                        "yes": "monkey",
+                        "no": {
+                            "question": "Can it bark?",
+                            "yes": "dog",
+                            "no": "lion"
+                        }
+                    }
                 },
-                "no": "horse"
+                "no": {
+                    "question": "Can they sleep in water?",
+                    "yes": "capybara",
+                    "no": "horse"
+                }
             }
         },
         "no": {
             "question": "Can it jump?",
             "yes": "frog",
-            "no": "snake"
+            "no": {
+                "question": "Does it have claws?",
+                "yes": "crab",
+                "no": {
+                    "question": "Does it have legs?",
+                    "yes": "rat",
+                    "no": "snake"
+                }
+            }
         }
     }
 }
