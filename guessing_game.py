@@ -62,7 +62,7 @@ class GuessingGame:
 
 
 
-    def get_spell_checked_input(self, prompt):
+    def spell_check(self, prompt):
         spell = SpellChecker()
 
         while True:
@@ -83,7 +83,7 @@ class GuessingGame:
 
 
     def new_animal(self, parent, last_answer, guess):
-        new_animal = self.get_spell_checked_input("I give up. What was your animal? ").strip().lower()
+        new_animal = self.spell_check("I give up. What was your animal? ").strip().lower()
 
         question = input(f"Please enter a question that distinguishes a {new_animal} from a {guess}: ").strip()
         question = question[0].upper() + question[1:].lower()
@@ -128,6 +128,7 @@ class GuessingGame:
                 print("Thanks for playing! See you next time.")
                 break
 
+print("Hello! Let's start the game!")
 if __name__ == "__main__":
     game = GuessingGame(filename)
     game.play()
